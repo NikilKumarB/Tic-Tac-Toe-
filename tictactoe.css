@@ -1,0 +1,51 @@
+/* tictactoe.css */
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #3498db; /* Add a border color */
+    box-shadow: 0 0 0 2px #ecf0f1; /* Add a box shadow */
+    line-height: 75px;
+    font-size: 36px; /* Adjust font size */
+    cursor: pointer;
+    background-color: #ecf0f1; /* Add a background color */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.cell:hover {
+    background-color: #bdc3c7; /* Change background color on hover */
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    color: #3498db; /* Set the text color */
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+#statusText {
+    margin-top: 20px; /* Add margin to separate from cell container */
+    color: #2ecc71; /* Set a color for the status text */
+}
+
+#restartBtn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to separate from status text */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+#restartBtn:hover {
+    background-color: #2980b9; /* Change background color on hover */
+}
